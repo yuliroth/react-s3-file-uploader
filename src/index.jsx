@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect, Provider } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { uploadImage } from './src/actions';
-import UploaderUi from './src/UploaderUi';
-import configureStore from './src/store';
+import { uploadImage } from './actions';
+import UploaderUi from './UploaderUi';
+import configureStore from './store';
 
 function mapStateToProps(state) {
   return {

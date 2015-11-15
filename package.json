@@ -1,10 +1,10 @@
 {
   "name": "react-s3-file-uploader",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Provides a React component that automatically uploads images to an selected S3 Bucket",
   "main": "index.js",
   "scripts": {
-    "build": "babel --stage 1 index.js --out-file lib/index.js",
+    "build": "webpack -p",
     "prepublish": "npm run build",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js test/**/*.js",
     "lint": "`npm bin`/eslint --ext .js,.jsx ."
@@ -26,12 +26,20 @@
   },
   "author": "Yuli Roth",
   "license": "MIT",
+  "dependencies": {
+    "axios": "^0.7.0",
+    "basscss": "^7.0.4",
+    "immutable": "^3.7.5",
+    "react-dropzone": "^3.0.0",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.4",
+    "redux-thunk": "^1.0.0"
+  },
   "peerDependencies": {
-    "material-ui": "^0.13.0",
     "react": "^0.14.0",
-    "react-dom": "^0.14.0",
     "react-tap-event-plugin": "^0.2.0",
-    "react-addons-pure-render-mixin": "^0.14.0"
+    "react-addons-pure-render-mixin": "^0.14.0",
+    "material-ui": "^0.13.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
@@ -53,15 +61,5 @@
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.1"
-  },
-  "dependencies": {
-    "axios": "^0.7.0",
-    "basscss": "^7.0.4",
-    "immutable": "^3.7.5",
-    "react-dropzone": "^3.0.0",
-    "react-redux": "^4.0.0",
-    "redux": "^3.0.4",
-    "redux-thunk": "^1.0.0"
   }
 }
-
