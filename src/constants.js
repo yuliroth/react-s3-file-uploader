@@ -1,0 +1,4 @@
+export const UPLOAD_IN_PROGRESS = 'UPLOAD_IN_PROGRESS';
+export const UPLOAD_ERROR = 'UPLOAD_ERROR';
+export const UPLOAD_FINISHED = 'UPLOAD_FINISHED';
+export const INITIAL = 'INITIAL';
